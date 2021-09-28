@@ -1,0 +1,108 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+header{
+	color: white; /*Change color of header from grey to white*/
+	text-indent: 10%; /*Indent text so that it stays aligned left on top of background image*/
+	background-image: url("sunset.jpg"); /*Add background image*/
+	background-repeat: no-repeat; /*Remove picture repeats*/
+	background-size: 80%; /*Make sure background image only takes up 80% of page width*/
+	background-position: center; /*Position background in the center of page*/
+}
+
+
+body {
+	/*background-color: ;*/
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(white,#00569f); /*Add correct background color with a vertical gradient*/
+	background-size: auto 1000px; /*Dimensions of body background*/
+	min-width: 600px; /*Set minimum width of page to maintain look*/
+}
+
+nav ul {
+	float: left; /*Use float to place navigation next to main content*/
+	font-size: 1.2em;
+	list-style: none; /*Remove bullets on navigation bar*/
+	background-color: #87CEEB; /*Add a background color behind navigation bar*/
+	margin-top: 0px; /*Remove space between top of navigation bar background and title background*/
+	padding-top: 20px; /*Add some space between the navigation list and the header photo*/
+	width: 150px; /*Adjust width of blue background to match photo*/
+	margin-left: 10%; /*Shift the background color from the left to line up with the header photo*/
+	
+}
+
+/*Style navigation bar*/
+nav a:link{
+	text-decoration: none; /*Remove underline*/
+	color: navy; /*Change to darker color from picture*/
+	font-weight: bold; /*Bold text in navigation bar*/
+}
+
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/*Style Main Content*/
+#content{
+	background-color: white; /*Add white background*/
+	margin-right: 10%; /*Align white background with header photo*/
+	padding-top: 10px; /*Extend white background to touch header photo*/
+	/**/ margin-left: 10%; /*Add margin to left of content*/
+	/**/ padding-left: 250px; /*Add some white space next to navigation bar*/
+	padding-right: 30px; /*Add some white space next to content*/
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/*Format Image of Coast*/
+#content img{
+	float: left; /*Float left to allow text content to wrap photo*/
+	margin-right: 30px; /*Add space between photo and text*/
+}
+
+/*Add marker image to replace bulleted list style*/
+#content ul{
+	list-style-image: url("marker.gif");
+	list-style-position: inside; /*Indent the list underneath the first paragraph*/
+}
+
+/*Style Resort Title of Content*/
+.resort { 
+	font-weight: bold;
+	color: #00569f;
+}
+
+
+#contact {
+	font-size: 90%;
+	padding-bottom: 80px; /*Add white space below contact*/
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 12px;
+	background-color: white; /*Add white background*/
+	margin-right: 10%; /*Align white background with header photo*/
+	/**/ margin-left: 10%; /*Add margin to left of content*/
+	/**/ padding-left: 250px; /*Add some white space next to navigation bar*/
+	font-style: italic; /*Add italics*/
+	padding-bottom: 20px; /*Add some white space below footer*/
+}
+
